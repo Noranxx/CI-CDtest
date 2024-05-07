@@ -22,7 +22,7 @@ pipeline {
             }
             steps {
                 // Copy the WAR file to the running Tomcat container
-                sh "curl -T target/your-application.war ${TOMCAT_URL}/manager/text/deploy?path=/your-application&update=true --user admin:password"
+                sh "curl -T target/my-app.war ${TOMCAT_URL}/manager/text/deploy?path=/my-app&update=true --user noran:123"
             }
         }
     }
