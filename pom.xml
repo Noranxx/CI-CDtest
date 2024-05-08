@@ -7,6 +7,12 @@
   <version>1.0-SNAPSHOT</version>
   <name>git-fetch</name>
   <url>http://maven.apache.org</url>
+ <repositories>
+       <repository>
+           <id>central</id>
+           <url>https://repo.maven.apache.org/maven2</url>
+       </repository>
+ </repositories>
    <build>
      <plugins>
          <plugin>
@@ -15,8 +21,8 @@
 	     <version>3.8.7</version> <!-- Specify the version of the Maven Compiler Plugin -->
 	     <configuration>
 		 <warName>my-app</warName>
-                 <source>1.8</source> <!-- Specify the Java version source compatibility -->
-                 <target>1.8</target> <!-- Specify the Java version target compatibility -->
+                 <source>17.0.11</source> <!-- Specify the Java version source compatibility -->
+                 <target>17.0.11</target> <!-- Specify the Java version target compatibility -->
              </configuration>
          </plugin>
      </plugins> 
