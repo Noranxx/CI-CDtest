@@ -22,8 +22,7 @@ pipeline {
             }
             steps {
                 // Copy the WAR file to the running Tomcat container
-                withCredentials([usernamePassword(credentialsId: 'my-credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
-                sh "curl --user ${USERNAME}:${PASSWORD} -T target/my-app.war ${TOMCAT_URL}"
+                sh "curl --user noran:123 -T target/my-app.war http://192.168.203.149:8080/manager/text/deploy?path=/my-app"                      
 
             }
         }
