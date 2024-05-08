@@ -11,8 +11,9 @@
      <plugins>
          <plugin>
              <groupId>org.apache.maven.plugins</groupId>
-             <artifactId>maven-compiler-plugin</artifactId>
-	     <version>3.1</version> <!-- Specify the version of the Maven Compiler Plugin -->
+	     <artifactId>maven-compiler-plugin</artifactId>
+	     <artifactId>maven-war-plugin</artifactId>
+	     <version>3.8.7</version> <!-- Specify the version of the Maven Compiler Plugin -->
 	     <configuration>
 		 <warName>my-app</warName>
                  <source>1.8</source> <!-- Specify the Java version source compatibility -->
