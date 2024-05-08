@@ -22,7 +22,8 @@ pipeline {
             }
             steps {
                 // Copy the WAR file to the running Tomcat container
-                sh "curl -T target/my-app.war ${TOMCAT_URL}/manager/text/deploy?path=/my-app&update=true --user noran:123"
+                sh 'curl --user noran:123 -T target/my-app.war http://192.168.203.149:8080/manager/text/deploy?path=/my-app'
+
             }
         }
     }
